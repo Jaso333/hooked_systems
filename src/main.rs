@@ -43,7 +43,7 @@ impl<A> Default for AssetComponent<A> {
     }
 }
 
-impl<A: 'static> Component for AssetComponent<A>
+impl<A> Component for AssetComponent<A>
 where
     A: Send + Sync + 'static,
 {
